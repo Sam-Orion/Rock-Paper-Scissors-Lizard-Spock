@@ -1,14 +1,21 @@
 function getRandomComputerResult() {
-    const options = ["Rock", "Paper", "Scissors"];
+    const options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
     const randomIndex = Math.floor(Math.random() * options.length);
     return options[randomIndex];
   }
   
   function hasPlayerWonTheRound(player, computer) {
     return (
-      (player === "Rock" && computer === "Scissors") ||
       (player === "Scissors" && computer === "Paper") ||
-      (player === "Paper" && computer === "Rock")
+      (player === "Paper" && computer === "Rock") ||
+      (player === "Rock" && computer === "Lizard") ||
+      (player === "Lizard" && computer === "Spock") ||
+      (player === "Spock" && computer === "Scissors") ||
+      (player === "Scissors" && computer === "Lizard") ||
+      (player === "Lizard" && computer === "Paper") ||
+      (player === "Paper" && computer === "Spock") ||
+      (player === "Spock" && computer === "Rock") ||
+      (player === "Rock" && computer === "Scissors")
     );
   }
   
@@ -67,6 +74,8 @@ function getRandomComputerResult() {
   const rockBtn = document.getElementById("rock-btn");
   const paperBtn = document.getElementById("paper-btn");
   const scissorsBtn = document.getElementById("scissors-btn");
+  const lizardBtn = document.getElementById("lizard-btn");
+  const spockBtn = document.getElementById("spock-btn");
   
   rockBtn.addEventListener("click", function () {
     showResults("Rock");
@@ -78,4 +87,12 @@ function getRandomComputerResult() {
   
   scissorsBtn.addEventListener("click", function () {
     showResults("Scissors");
+  });
+
+  lizardBtn.addEventListener("click", function () {
+    showResults("Lizard");
+  });
+
+  spockBtn.addEventListener("click", function () {
+    showResults("Spock");
   });

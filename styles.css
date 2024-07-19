@@ -37,7 +37,11 @@ body::before {
 
 h1 {
   margin: 15px 0 20px;
-  font-size: 24px;
+}
+
+#game-title {
+  font-size: 2.5rem; /* Adjust this value as needed */
+  margin: 20px 0; /* Adjust margins as needed */
 }
 
 .btn {
@@ -55,7 +59,7 @@ h1 {
   background-image: linear-gradient(#ffcc4c, #f89808);
 }
 
-.rules-container {
+/* .rules-container {
   padding: 10px 0;
   margin: auto;
   border-radius: 15px;
@@ -70,6 +74,29 @@ h1 {
 
 .rules-container p {
   margin: 10px 0;
+} */
+
+.rules-container {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--very-dark-blue);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.rules-content {
+  text-align: left;
+  line-height: 1.6;
+}
+
+.rules-content ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.rules-content p, .rules-content li {
+  margin-bottom: 10px;
 }
 
 @media (min-width: 760px) {

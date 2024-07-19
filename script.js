@@ -48,9 +48,9 @@ function getRandomComputerResult() {
     computerScoreSpanElement.innerText = computerScore;
     playerScoreSpanElement.innerText = playerScore;
   
-    if (playerScore === 3 || computerScore === 3) {
+    if (playerScore === 5 || computerScore === 5) {
       winnerMsgElement.innerText = `${
-        playerScore === 3 ? "Player" : "Computer"
+        playerScore === 5 ? "Player" : "Computer"
       } has won the game!`;
   
       resetGameBtn.style.display = "block";

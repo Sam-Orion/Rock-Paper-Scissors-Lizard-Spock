@@ -1,4 +1,4 @@
-*,
+/* *,
 *::before,
 *::after {
   margin: 0;
@@ -15,7 +15,7 @@
 
 body {
   /* background-color: var(--very-dark-blue); */
-  text-align: center;
+  /* text-align: center;
   color: var(--white);
   background-image: url('img/RPSLS-Title.png');
   background-position: center center;
@@ -31,8 +31,8 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for more or less darkness */
-  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5); Adjust the last value (0.5) for more or less darkness */
+  /* z-index: -1;
 }
 
 h1 {
@@ -41,10 +41,10 @@ h1 {
 
 #game-title {
   font-size: 2.5rem; /* Adjust this value as needed */
-  margin: 20px 0; /* Adjust margins as needed */
+  /* margin: 20px 0; /* Adjust margins as needed 
 }
 
-.btn {
+/*.btn {
   cursor: pointer;
   width: 100px;
   margin: 10px;
@@ -56,7 +56,7 @@ h1 {
 }
 
 .btn:hover {
-  background-image: linear-gradient(#ffcc4c, #f89808);
+  background-image: linear-gradient(#ffcc4c, #f89808);  
 }
 
 /* .rules-container {
@@ -74,7 +74,7 @@ h1 {
 
 .rules-container p {
   margin: 10px 0;
-} */
+} 
 
 .rules-container {
   padding: 20px;
@@ -128,4 +128,21 @@ h1 {
 #reset-game-btn {
   display: none;
   margin: 20px auto;
+} */
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient:hover {
+  animation: gradient-animation 3s ease infinite;
+  background-size: 200% 200%;
+}
+
+.animate-gradient-border {
+  background: linear-gradient(60deg, #3b82f6, #8b5cf6, #ef4444, #3b82f6);
+  background-size: 300% 300%;
+  animation: gradient-animation 5s ease infinite;
 }
